@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Proyecto CI/CD</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      background: #f7f2fc;
+      color: #35204f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 850px;
+      background: white;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 12px 35px rgba(88, 50, 120, 0.15);
+    }
+
+    .header {
+      background: linear-gradient(135deg, #6d3c91, #9b6bc1);
+      color: white;
+      padding: 45px;
+    }
+
+    .header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 12px;
+    }
+
+    .header p {
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+
+    .content {
+      padding: 40px;
+    }
+
+    .content h2 {
+      color: #6d3c91;
+      margin-bottom: 15px;
+    }
+
+    .content p {
+      line-height: 1.7;
+      color: #62566b;
+      margin-bottom: 25px;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 25px;
+    }
+
+    .step {
+      background: #faf7fd;
+      border: 1px solid #e5d8ee;
+      border-radius: 12px;
+      padding: 22px;
+    }
+
+    .step-number {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background: #eee2f7;
+      color: #6d3c91;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .step h3 {
+      font-size: 1rem;
+      color: #4e2b69;
+      margin-bottom: 8px;
+    }
+
+    .step p {
+      font-size: 0.88rem;
+      margin: 0;
+    }
+
+    .success {
+      margin-top: 30px;
+      padding: 18px;
+      background: #f1eafa;
+      border-left: 5px solid #8b5bb5;
+      border-radius: 8px;
+      color: #51346a;
+      font-weight: 500;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #fbf9fd;
+      color: #8a7894;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 700px) {
+      .steps {
+        grid-template-columns: 1fr;
+      }
+
+      .header {
+        padding: 30px;
+      }
+
+      .content {
+        padding: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header class="header">
+      <h1>Mi Proyecto de Integración Continua</h1>
+      <p>Despliegue automático de una página web</p>
+    </header>
+
+    <section class="content">
+
+      <h2>¡Proyecto funcionando!</h2>
+
+      <p>
+        Esta página forma parte de una práctica de integración continua.
+        El proyecto utiliza GitHub Actions para automatizar el proceso
+        de despliegue y Surge.sh para publicar la página web.
+      </p>
+
+      <div class="steps">
+
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>GitHub</h3>
+          <p>
+            El código del proyecto se almacena en un repositorio.
+          </p>
+        </div>
+
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Actions</h3>
+          <p>
+            GitHub Actions ejecuta automáticamente el proceso de despliegue.
+          </p>
+        </div>
+
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Surge.sh</h3>
+          <p>
+            La página es publicada automáticamente en Internet.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="success">
+        ✓ Integración continua configurada correctamente.
+      </div>
+
+    </section>
+
+    <footer>
+      Práctica de GitHub Actions y Surge.sh · Siclary Pérez
+    </footer>
+
+  </div>
+
+</body>
+</html>
